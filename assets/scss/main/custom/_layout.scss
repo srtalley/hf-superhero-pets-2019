@@ -1,0 +1,75 @@
+/**
+ * Layout
+ */
+
+.elementor-widget-wrap {
+
+    .auto-inline-inner-section {
+
+        &.elementor-inner-section {
+            display: inline-block;
+            width: auto;
+        }
+
+        &.vertical-align-middle {
+            vertical-align: middle;
+            align-self: center;
+        }
+    }
+}
+
+body {
+    min-width: 320px;
+
+    .elementor-section {
+
+        .elementor-container {
+            padding: 0;
+        }
+    }
+
+    .elementor-widget-smartslider {
+
+        .slide-1-content {
+            background-image: url('./assets/images/superhero-dog-rescue-charity-desktop-1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+            @media (max-width: 550px) {
+                background-image: url('./assets/images/superhero-dog-rescue-charity-mobile-1.jpg');
+                background-position: center top;
+            }
+        }
+
+        .n2-ss-section-main-content {
+            position: relative;
+
+            .slide-corner-triangle {
+                position: absolute;
+                top: 55px;
+                left: -75px;
+                transform: rotate(-45deg);
+
+                @media (max-width:1300px) {
+                    display: none;
+                }
+
+                .n2-ss-layer-content {
+                    max-width: 350px;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        border-left: 250px solid transparent;
+                        border-right: 250px solid transparent;
+                        border-bottom: 250px solid #f25549;
+                        position: absolute;
+                        top: -150px;
+                        left: -100px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+/**
+ * Admin Styles
+ */
+body {
+  min-width: 330px; }
+  body .elementor-section .elementor-container {
+    padding: 0; }
